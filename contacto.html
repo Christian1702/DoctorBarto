@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Estilos/StylesContacto.css">
+    <link rel="shortcut icon" href="./img/Favicom.png" type="image/x-icon">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <header>
+        <div class="navbar">
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./ArticuloUno.html">Control Hemorragia</a></li>
+                <li><a href="./ArticuloDos.html">Reanimación Cardiorrespiratoria</a></li>
+                <li><a href="./contacto.html">Contactame</a></li>
+            </ul>
+        </div>
+        <div class="logo">
+            <h1>El Doctor Barto</h1>
+        </div>
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+        <!-- Tabla de imágenes -->
+        <section class="imagenes">
+            <h2>Enlaces de Interes: </h2>
+            <table>
+                <tr>
+                    <td><a href="https://www.noticiasmedicas.es/salud/medicamento-para-detener-sangrado/">
+                            <img src="./img/pastillas.jpeg" alt="Pastillas para la hemorragia" width="200">
+                            <h3>Pastillas para la Hemorragia</h3>
+                        </a>
+                    </td>
+                    <td><a href="https://www.nhlbi.nih.gov/es/salud/trastornos-hemorragicos/causas">
+                            <img src="./img/causaefecto.webp" alt="Causa y efecto de las hemorragias" width="200">
+                            <h3>Efectos de las Hemorragias</h3>
+                        </a>
+                    </td>
+                    <td><a href="https://cinfasalud.cinfa.com/p/hemorragias/">
+                            <img src="./img/tipohemorragia.webp" alt="Tipos de hemorragia" width="200">
+                            <h3>Tipos de Hemorragia</h3>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td><a
+                            href="https://equimed.es/el-equipo-medico-y-la-importancia-de-la-reanimacion-cardiopulmonar-rcp/">
+                            <img src=".//img/equipos.jpg" alt="Equipos de Reanimación Cardiorrespiratoria" width="200">
+                            <h3>Equipos de Reanimación</h3>
+                        </a>
+                    </td>
+                    <td><a
+                            href="https://fundaciondelcorazon.com/prevencion/rcp-reanimacion-cardiopulmonar-salvar-vida/tecnicas-de-reanimacion-cardiopulmonar-rcp.html">
+                            <img src="./img/metodosReanimación.jpeg" alt="Metodos de reanimación cariorespiratoria"
+                                width="200">
+                            <h3>Metodos de Reanimación (RCP)</h3>
+                        </a>
+                    </td>
+                    <td><a href="https://www.weinmann-emergency.com/es/temas/emergencia/reanimacion">
+                            <img src="./img/RCP.jpeg" alt="Causas y objetivos del RCP" width="200">
+                            <h3>Causas y Objetivos del RCP</h3>
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="video">        
+            <!-- Video de YouTube 1 -->
+            <div class="video-item">
+                <iframe width="70%" height="400" src="https://www.youtube.com/embed/gLofeZzRiR8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            
+            <br><br>
+
+            <!-- Video de YouTube 2 -->
+            <div class="video-item">
+                <iframe width="70%" height="400" src="https://www.youtube.com/embed/wbp_AdGkWPM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <!-- Formulario de contacto -->
+        <section class="contacto">
+            <h2>Contáctame</h2>
+            <form action="/enviar-formulario" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>

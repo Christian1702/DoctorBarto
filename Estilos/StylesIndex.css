@@ -1,0 +1,249 @@
+/*Importación de estilos de letra*/
+@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap');
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+}
+
+/* Encabezado */
+header {
+    text-align: center;
+    background-color: #003650;
+    color: white;
+    padding: 20px 10px;
+}
+
+header .navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+    flex-wrap: wrap;
+}
+
+header .navbar ul li {
+    display: inline;
+}
+
+header .navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 13px;
+    text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.449);
+    border: 1px white solid;
+    border-radius: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+    color: inherit; 
+}
+
+header .navbar ul li a:hover {
+    background-color: white;
+    text-shadow: 1px 1px 3px black;
+    color: #003650;
+    transition: 1s;
+}
+
+header .logo h1 {
+    font-size: 3rem;
+    margin-top: 10px;
+    font-family: "Parkinsans";
+}
+
+/* Contenido principal del Blog */
+main {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Artículos del Blog */
+.content {
+    flex: 3;
+}
+
+.article {
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.article img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.contenedor_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 100%;
+    background-color: #f4f4f4;
+    overflow: hidden;
+}
+
+.contenedor_img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.article h2,
+h2 {
+    color: #9f002c;
+    margin-top: 10px;
+}
+
+.article p {
+    margin: 10px 0;
+}
+
+.article button {
+    background-color: #9f002c;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.article button:hover {
+    background-color: #ff2567;
+    transition: 0.5s;
+}
+
+/* Barra lateral derecha */
+.sidebar {
+    flex: 1;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.sidebar .enlaces_extra img {
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.sidebar h3 {
+    color: #c2185b;
+    margin-bottom: 10px;
+}
+
+/* Pie de página */
+footer {
+    background-color: #003650;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+/* ---- RESPONSIVIDAD DEL BLOG WEB ---- */
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    header .logo h1 {
+        font-size: 2.5rem;
+    }
+
+    header .navbar ul {
+        gap: 20px;
+    }
+
+    .sidebar {
+        margin-top: 20px;
+    }
+
+    .contenedor_img {
+        height: 250px;
+    }
+
+    .article button {
+        padding: 8px 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 15px 5px;
+    }
+
+    header .logo h1 {
+        font-size: 2rem;
+    }
+
+    header .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    main {
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .contenedor_img {
+        height: 200px; 
+    }
+
+    .article {
+        padding: 10px;
+    }
+
+    .article h2 {
+        font-size: 1.2rem;
+    }
+
+    .article p {
+        font-size: 0.9rem;
+    }
+
+    .article button {
+        font-size: 0.9rem;
+        padding: 6px 10px;
+    }
+
+    .sidebar {
+        padding: 10px;
+    }
+
+    .sidebar .enlaces_extra img {
+        width: 80px;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+}

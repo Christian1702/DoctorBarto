@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap');
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    padding: 0;
+}
+
+/* Encabezado */
+header {
+    text-align: center;
+    background-color: #003650;
+    color: white;
+    padding: 20px 10px;
+}
+
+header .navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+    flex-wrap: wrap;
+}
+
+header .navbar ul li {
+    display: inline;
+}
+
+header .navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 13px;
+    text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.449);
+    border: 1px white solid;
+    border-radius: 5px;
+}
+
+/* Enlaces: eliminar subrayado y estilo predeterminado para mejora visual*/
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+    color: inherit; 
+}
+
+header .navbar ul li a:hover {
+    background-color: white;
+    text-shadow: 1px 1px 3px black;
+    color: #003650;
+    transition: 1s;
+}
+
+header .logo h1 {
+    font-size: 3rem;
+    margin-top: 10px;
+    font-family: "Parkinsans";
+}
+
+/* Estilo para las secciones principales */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+/* Tabla de imágenes */
+.imagenes table {
+    width: 100%;
+    margin-bottom: 40px;
+    border-collapse: collapse;
+}
+
+.imagenes td {
+    text-align: center;
+    padding: 10px;
+}
+
+.imagenes img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.imagenes img:hover {
+    transform: scale(1.05);
+}
+
+/* Video */
+.video {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.video video {
+    width: 80%;
+    max-width: 800px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Formulario de contacto */
+.contacto {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contacto h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #003650;
+}
+
+.contacto form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contacto label {
+    font-weight: bold;
+}
+
+.contacto input, .contacto textarea {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.contacto input:focus, .contacto textarea:focus {
+    border-color: #0066cc;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 102, 204, 0.5);
+}
+
+.contacto button {
+    padding: 12px 20px;
+    background-color: #003650;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.contacto button:hover {
+    background-color: #0066cc;
+    transform: scale(1.05);
+}
+
+.contacto button:active {
+    background-color: #004d80;
+    transform: scale(1);
+}
